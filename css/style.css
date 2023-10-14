@@ -16,7 +16,7 @@
     list-style-type: none;
   }
 
-.header__container /*SEGUIR AGREGANDO LOS CONTAINERS ACA  */{
+.header__container, .main__container /*SEGUIR AGREGANDO LOS CONTAINERS ACA  */{
     max-width: 1200px;
     margin: 0 auto;
 }
