@@ -1,7 +1,8 @@
 :root{
     --barraNavegacion: #9A4444;
     --blanco: white;
-    --amarillo: yellow;
+    --amarillo: rgb(236, 236, 50);
+    --cerveza: #e6902e;
 }
 
 * {
@@ -16,7 +17,7 @@
     list-style-type: none;
   }
 
-.header__container, .main__container /*SEGUIR AGREGANDO LOS CONTAINERS ACA  */{
+.header__container, .main__container, .main__container-catalogo, .main__container-pagos, .main__container-ubicacion{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -26,21 +27,130 @@
     position: sticky;
     top: 0;
     z-index: 1;
-}.header__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}.header__container-logo img{
-    max-width: 20%;
-    border-radius: 50%;
-}.header__container-nav ul li{
-    display: inline;    
-    margin-right: 25px;
-}.header__container-nav ul li a{
-    color: var(--blanco);
-    font-size: 20px;
+    }.header__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }.header__container-logo img{
+        max-width: 20%;
+        border-radius: 50%;
+    }.header__container-nav ul li{
+        display: inline;    
+        margin-right: 25px;
+    }.header__container-nav ul li a{
+        color: var(--blanco);
+        font-size: 20px;
+        font-weight: bold;
+    }.header__container-nav ul li a:hover{
+        color: var(--amarillo);
+}
+
+.carousel{
+    margin-top: 1rem;
+    }.carousel img{
+        max-width: auto;
+        max-height: 500px;
+        border-radius: 50px;
+}
+.main__container-nosotros{
+    margin: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }.nosotros-texto{
+        text-align: center;
+    }.crearUsuario {
+        margin: 1rem 1rem 1rem 10rem;
+        }.crearUsuario fieldset {
+        color: black;    
+    }.crearUsuario input {
+        display: block;
+        margin: 0 5rem 0.1rem 0;
+        width: 60%;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }.crearUsuario input:focus {
+        background-color: var(--amarillo);
+    }.crearUsuario button {
+        background-color: var(--cerveza);
+        color: white;
+        font-size: 1rem;
+        border: none;
+        padding: 0.1rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }.crearUsuario button:hover {
+        background-color: var(--barraNavegacion);
+    }.nosotros-video{
+        border-radius: 1rem;
+        overflow: hidden;
+}
+
+.main__container-catalogo{
+    height: 500px;
+    background-color: yellow;
+}
+
+
+.main__container-pagos{
+    text-align: center;
+    }.main__container-pagos h3{
+        text-decoration: underline;
+        text-align: center;
+    }.main__container-pagos img{
+        display: inline-flex;
+        width: 5%;
+        margin-right: 5rem;
+}
+
+.main__container-ubicacion{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: var(--barraNavegacion);
+    text-align: center;
+    position: relative;
+    }.footer small {
+        text-align: center;
+        font-size: 1rem;
+        color: var(--blanco);
+    }.footer-carritoCompras{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 1rem;
+    }
+    .footer-carritoCompras p {
+        display: flex; 
+        align-items: center;
+        background-color: red;
+        color: white; 
+        padding: 10px; 
+        border-radius: 50%; 
+        margin-left: 5px; 
+}
+
+
+
+
+
+
+
+
+
+
+   
+/* estilos comunes*/
+.strong{
     font-weight: bold;
-}.header__container-nav ul li a:hover{
-    color: var(--amarillo);
+}
+.letraFondo{
+    background-color: red;
+    border-radius: 10px;
 }
