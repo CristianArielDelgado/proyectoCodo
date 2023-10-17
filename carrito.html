@@ -6,6 +6,8 @@
         <title>Bebidas Elegantes</title>
          <!-- Boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        
         <!-- CDN sweetalert -->
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!-- CDN toastify -->
@@ -24,10 +26,10 @@
                 </div>
                 <nav class="header__container-nav">
                     <ul>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#catalogo">Catalogo</a></li>
-                        <li><a href="#pagos">Pagos</a></li>
-                        <li><a href="#ubicacion">Ubicacion</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#catalogo">Catalogo</a></li>
+                        <li><a href="index.html#pagos">Pagos</a></li>
+                        <li><a href="index.html#ubicacion">Ubicacion</a></li>
                         <li><a href="./carrito.html">Comprar</a></li>
 
                     </ul>
@@ -73,65 +75,46 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                     <!-- Fin Carrousel-->
-                <div id="nosotros" class="main__container-nosotros">
-                    <div class="nosotros-texto">
-                        <h2>Bienvenido a Bebidas Elegantes</h2>
-                        <p>Ofrecemos una amplia selección de bebidas y entregamos directamente a tu puerta. Simplemente registrate y empeza a disfrutar.</p>
-                        <div class="crearUsuario">
-                            <form action="" method="" enctype="">
-                                <fieldset>
-                                    <input type="email" placeholder="Email" required>
-                                    <input type="number" min="18" max="100" placeholder="Edad" required>
-                                    <input type="password" placeholder="Contraseña" required>
-                                    <button>Crear Usuario</button>
-                                </fieldset>
-                            </form>
+                </div>
+            </div>
+
+
+        
+           <h2 class="titulo-principal">Carrito de compras</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se va a completar con el JS -->
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izqueirda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar strong">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total strong">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
                         </div>
-                    </div>
-                    <div class="nosotros-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NlLDQVe6Rlc?si=dUdO_oBicAIxBDUJ"></iframe>
-                    </div>
-                </div>
-                
-                <div id="catalogo" class="main__container-catalogo">
-                    <div id="contenedor-productos" class="contenedor-productos">
-                        
-                        
-                        
-                        <!-- Esto se va a rellenar con JS-->
-
-
-
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
 
-                <div id="pagos" class="main__container-pagos">
-                    <h3>Aceptamos los siguientes metodos de pago</h3>
-                    <img src="./assets/images/bancoSantander.png" alt="Banco Santander Rio">
-                    <img src="./assets/images/mercadoPago.png" alt="Mercado Pago">
-                    <img src="./assets/images/paypal.png" alt="Paypal">
-                </div>
-                <div id="ubicacion" class="main__container-ubicacion">
-                    <h2>Nos encontramos en Lanus Oeste.</h2>
-                    <p>Si nos queres venir a conocer, estamos a metros de la estacion.</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.904429815351!2d-58.39288842447768!3d-34.707590382042504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd2304c40089%3A0x7fafac9e3e9126d6!2zTGFuw7pz!5e0!3m2!1ses-419!2sar!4v1697417868968!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
             </div>
-            
         </main>
+    </div>
 
-        <footer class="footer">
-            <small>
-                &copy; 2023 | PROYECTO CODO A CODO, todos los derechos reservados.
-            </small>
-            <div class="footer-carritoCompras">
-                <p class="strong"><img src="./assets/images/carritoCompras.png" alt="Carrito de Compras"><span id="numerito" class="numerito">0</span></p>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/carrito.js"></script>
-    </body>
+    <footer class="footer">
+        <small>
+            &copy; 2023 | PROYECTO CODO A CODO, todos los derechos reservados.
+        </small>
+    </footer>
+
+
+
+    <script src="./js/carrito.js"></script>
+</body>
 </html>
