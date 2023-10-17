@@ -3,6 +3,9 @@
     --blanco: white;
     --amarillo: rgb(236, 236, 50);
     --cerveza: #e6902e;
+    --clr-main: rgb(223, 86, 71);
+    --clr-white: #ececec;
+
 }
 
 * {
@@ -89,8 +92,7 @@
 }
 
 .main__container-catalogo{
-    height: 500px;
-    background-color: yellow;
+    margin: 2rem;
 }
 
 
@@ -137,15 +139,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-   
 /* estilos comunes*/
 .strong{
     font-weight: bold;
@@ -154,3 +147,69 @@
     background-color: red;
     border-radius: 10px;
 }
+
+
+/*      ESTILOS DE LOS ARCHIVOS INCORPORADOS MEDIANTE JAVASCRIPT     */
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}.producto-imagen {
+        max-width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }.producto-detalles {
+        background-color: var(--clr-main);
+        color: var(--clr-white);
+        padding: .5rem;
+        border-radius: 1rem;
+        margin-top: -2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        text-align: center;
+    }.producto-titulo {
+        font-size: 1rem;
+    }.producto-agregar {
+        border: 0;
+        background-color: var(--clr-white);
+        color: var(--clr-main);
+        padding: .4rem;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        cursor: pointer;
+        border: 2px solid var(--clr-white);
+        transition: background-color .2s, color .2s;
+    }.producto-agregar:hover {
+        background-color: var(--clr-main);
+        color: var(--clr-white);
+}
+
+/*      Estilos del panel lateral       */
+.cart-panel {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Inicialmente fuera de la pantalla */
+    background-color: white;
+    z-index: 1;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  #close-cart {
+    margin-bottom: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para ocultar el panel lateral */
+  #cart-panel.open {
+    right: 0;
+  }

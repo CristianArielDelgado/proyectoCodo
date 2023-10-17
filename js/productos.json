@@ -1,0 +1,56 @@
+[
+    {
+        "id": "bebida-01",
+        "titulo": "White Horse",
+        "descripcion": "Whisky Blended Scotch White Horse 750 ML",
+        "precio":3575,
+        "descuento":"20% OFF",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto01.jpg" 
+    },
+    {
+        "id": "bebida-02",
+        "titulo": "Benjamin Nieto",
+        "descripcion": "Vino Rosado Benjamin Nieto Senetiner 750 ML",
+        "precio":1965,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto02.jpg" 
+    },
+    {
+        "id": "bebida-03",
+        "titulo": "Wampa",
+        "descripcion": "Vino Blanco Tardio Dulce Wampa 750 ML",
+        "precio":1780,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto03.jpg" 
+    },
+    {
+        "id": "bebida-04",
+        "titulo": "Ramblers",
+        "descripcion": "Cerveza Amber Ale 473 ML",
+        "precio":599,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto04.jpg" 
+    },
+    {
+        "id": "bebida-05",
+        "titulo": "Nieto Senetiner",
+        "descripcion": "Champagne Extra Brut Nature 750 ML",
+        "precio":4860,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto05.jpg" 
+    },
+    {
+        "id": "bebida-06",
+        "titulo": "Gordon's",
+        "descripcion": "Gin Gordons 700 ML",
+        "precio":3605,
+        "descuento":"5% OFF",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto06.jpg" 
+    }
+]
