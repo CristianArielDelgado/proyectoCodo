@@ -52,5 +52,32 @@
         "descuento":"5% OFF",
         "stock":5,
         "imagen": "./assets/images/productos/producto06.jpg" 
+    },
+    {
+        "id": "bebida-07",
+        "titulo": "Quilmes",
+        "descripcion": "Cerveza Lata Quilmes 473ML",
+        "precio":550,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto07.jpg" 
+    },
+    {
+        "id": "bebida-08",
+        "titulo": "Dr Lemon",
+        "descripcion": "Dr Lemon Mojito 473ML",
+        "precio":510,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto08.jpg" 
+    },
+    {
+        "id": "bebida-09",
+        "titulo": "Ramblers",
+        "descripcion": "Cerveza Honey Lata Ramblers 473ML",
+        "precio":599,
+        "descuento":"",
+        "stock":5,
+        "imagen": "./assets/images/productos/producto09.jpg" 
     }
 ]
