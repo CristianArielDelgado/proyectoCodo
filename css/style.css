@@ -4,26 +4,22 @@
     --blanco: white;
     --amarillo: rgb(236, 236, 50);
     --cerveza: #e6902e;
-    --clr-main: rgb(223, 86, 71);
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
-
-
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }a {
+}a {
     text-decoration: none;
-  }
-  
-  ul {
+}
+ul {
     list-style-type: none;
-  }
+}
 
-.header__container, .main__container, .main__container-catalogo, .main__container-pagos, .main__container-ubicacion{
+.header__container, .main__container, .main__container-catalogo, .main__container-pagos, .main__container-ubicacion, .main__container-contacto{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -33,16 +29,20 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    max-width: 100%;
+    margin: 0 auto;
+
     }.header__container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        margin-right: 20px;
     }.header__container-logo img{
-        max-width: 20%;
+        max-width: 10%;
         border-radius: 50%;
     }.header__container-nav ul li{
-        display: inline;    
+        display: inline;
         margin-right: 25px;
     }.header__container-nav ul li a{
         color: var(--blanco);
@@ -69,7 +69,7 @@
     }.crearUsuario {
         margin: 1rem 1rem 1rem 10rem;
         }.crearUsuario fieldset {
-        color: black;    
+        color: black;
     }.crearUsuario input {
         display: block;
         margin: 0 5rem 0.1rem 0;
@@ -121,6 +121,7 @@
     background-color: var(--barraNavegacion);
     text-align: center;
     position: relative;
+    margin-top: 1rem;
     }.footer small {
         text-align: center;
         font-size: 1rem;
@@ -132,13 +133,13 @@
         margin: 1rem;
     }
     .footer-carritoCompras p {
-        display: flex; 
+        display: flex;
         align-items: center;
         background-color: red;
-        color: white; 
-        padding: 10px; 
-        border-radius: 50%; 
-        margin-left: 5px; 
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        margin-left: 5px;
 }
 
 
@@ -188,33 +189,6 @@
         background-color: var(--clr-main);
         color: var(--clr-white);
 }
-
-
-/*      Estilos del panel lateral       */
-.cart-panel {
-    width: 300px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: -300px; 
-    background-color: white;
-    z-index: 1;
-    overflow-y: auto;
-    padding: 20px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-  }
-  #close-cart {
-    margin-bottom: 10px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  /* Estilos para ocultar el panel lateral */
-  #cart-panel.open {
-    right: 0;
-  }
 
 
 /** CARRITO **/
@@ -299,4 +273,66 @@
 }
 .disabled {
     display: none;
+}
+
+
+/* MEDIAS QUERYS */
+@media (max-width: 550px) {
+    .carousel {
+        display: none;
+    }
+    .nosotros-video {
+        display: none;
+    }
+    .main__container-nosotros {
+        grid-template-columns: 1fr;
+    }
+    .contenedor-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-productos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main__container-ubicacion {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .nosotros-video {
+        display: none;
+    }
+    .main__container-nosotros {
+        grid-template-columns: 1fr;
+    }
+    .contenedor-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main__container-ubicacion {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .nosotros-video {
+        display: none;
+    }
+    .main__container-nosotros {
+        grid-template-columns: 1fr;
+    }
+    .contenedor-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
